@@ -1,0 +1,87 @@
+/* Style global */
+body {
+  font-family: 'Baloo 2', cursive;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+header {
+  background-color: #8b0000;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  background-color: rgb(178, 34, 34);
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+/* Menu et Icônes */
+.menu-category {
+  margin: 15px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-items {
+  display: none;
+  padding: 0;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.menu-items li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left; /* Aligne le texte à gauche pour le menu */
+}
+
+.menu-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  object-fit: contain;
+  filter: brightness(0); /* Force l'image en noir total */
+}
+
+.menu-items li span {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.toggle-btn.open {
+  transform: rotate(180deg);
+}
+
+footer {
+  background-color: #8b0000;
+  color: #fff;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .menu-category { width: 90%; }
+}
